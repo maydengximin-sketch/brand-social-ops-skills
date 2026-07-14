@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>X 推广图</title>
+<style>
+  body{margin:0;background:#3f3f3d;}
+  .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:20px;}
+  /* X 卡片 16:9 = 1600x900 */
+  .card{
+    width:1600px;height:900px;position:relative;overflow:hidden;flex:none;
+    background:#faf7f1;box-shadow:0 24px 70px rgba(0,0,0,.4);transform-origin:top left;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .grain{position:absolute;inset:0;opacity:.035;pointer-events:none;
+    background-image:radial-gradient(#000 1px,transparent 1px);background-size:6px 6px;}
+  .serif{font-family:"Songti SC","SimSun","STSong",serif;}
+  .ink{color:#1f1e1c;} .soft{color:#8a8377;} .red{color:#b3453b;}
+  .pen{position:absolute;height:0;border-bottom:3px solid #b3453b;opacity:.75;border-radius:2px;transform:rotate(-.5deg);}
+  .rule{height:1px;background:#ddd4c4;}
+  .vrule{width:1px;background:#ddd4c4;}
+  .foot{position:absolute;left:80px;right:80px;bottom:56px;}
+  .tier{margin:0 auto 12px;border:1.5px solid #cfc5b2;border-radius:3px;
+        display:flex;align-items:center;justify-content:center;
+        font-size:24px;color:#1f1e1c;height:60px;background:#fdfbf7;letter-spacing:1px;}
+  .tier.hot{border:2px solid #b3453b;color:#b3453b;background:#fdf6f4;font-weight:600;}
+  .bar{display:flex;align-items:center;gap:20px;margin-bottom:26px;}
+  .bar .lab{width:120px;text-align:right;font-size:30px;}
+  .bar .fill{height:34px;background:#e6dcc8;border-radius:3px;}
+  .bar .fill.hi{background:#b3453b;}
+  .bar .note{font-size:24px;color:#8a8377;}
+  body.shot{background:#fff;} body.shot .wrap{padding:0;gap:0;display:block;}
+  body.shot .card{display:none;box-shadow:none;transform:none!important;}
+  body.shot .card.show{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 封面卡片 -->
+<section class="card" id="cover">
+  <div class="grain"></div>
+  <div style="position:absolute;left:88px;top:150px;right:600px;">
+    <div class="serif ink" style="font-size:72px;line-height:1.4;letter-spacing:2px;">
+      我把品牌社媒的
+    </div>
+    <div class="serif ink" style="font-size:72px;line-height:1.4;letter-spacing:2px;position:relative;display:inline-block;">
+      方法论，开源了。
+      <span class="pen" style="left:0;bottom:12px;width:430px;"></span>
+    </div>
+    <div class="soft" style="font-size:30px;line-height:1.9;margin-top:44px;letter-spacing:1px;">
+      11 个 Claude Agent Skills<br>
+      MIT 协议 · 随便用
+    </div>
+    <div class="ink serif" style="font-size:34px;margin-top:56px;">
+      它不难，<span class="red">只是没人告诉你</span>。
+    </div>
+  </div>
+
+  <!-- 右侧 skill 清单 -->
+  <div style="position:absolute;right:88px;top:140px;width:470px;">
+    <div class="rule" style="margin-bottom:22px;"></div>
+    <div class="ink" style="font-size:24px;line-height:1.95;">
+      品牌社媒总纲<br>
+      KOS 一线员工体系<br>
+      <span class="red">小红书双路流量机制</span><br>
+      <span class="red">反漏斗人群投放</span><br>
+      达人筛选与避坑<br>
+      种草三段式<br>
+      <span class="red">数据指标与诊断</span><br>
+      评论区运营<br>
+      合规审查<br>
+      高净值客户经营<br>
+      危机预案
+    </div>
+    <div class="rule" style="margin-top:26px;"></div>
+  </div>
+
+  <div class="foot">
+    <div class="rule" style="margin-bottom:20px;"></div>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;">
+      <div class="ink" style="font-size:26px;letter-spacing:1px;">@慢渡人间序</div>
+      <div class="soft" style="font-size:24px;">github.com/maydengximin-sketch/brand-social-ops-skills</div>
+    </div>
+  </div>
+</section>
+
+<!-- 插图 1：两套流量 -->
+<section class="card" id="fig1">
+  <div class="grain"></div>
+  <div style="position:absolute;left:88px;top:80px;right:88px;">
+    <div class="serif ink" style="font-size:52px;letter-spacing:2px;">流量走的是<span class="red">两条路</span></div>
+    <div class="rule" style="margin-top:28px;"></div>
+  </div>
+
+  <div style="position:absolute;left:88px;top:230px;width:620px;">
+    <div class="serif ink" style="font-size:44px;">被刷到</div>
+    <div class="soft" style="font-size:23px;margin-top:10px;">推荐 · 发现页</div>
+    <div class="ink" style="font-size:29px;line-height:2.05;margin-top:38px;">
+      系统先给一小波流量试水<br>
+      主要看
+      <span style="border-bottom:2px solid #1f1e1c;">点击率</span> ·
+      <span style="border-bottom:2px solid #1f1e1c;">互动率</span><br>
+      跑得好，才进更大的池子
+    </div>
+    <div style="margin-top:44px;position:relative;display:inline-block;">
+      <div class="serif red" style="font-size:36px;">胜负手：封面</div>
+      <span class="pen" style="left:0;bottom:-8px;width:230px;"></span>
+    </div>
+  </div>
+
+  <div class="vrule" style="position:absolute;left:800px;top:240px;height:440px;"></div>
+
+  <div style="position:absolute;left:880px;top:230px;width:620px;">
+    <div class="serif ink" style="font-size:44px;">被搜到</div>
+    <div class="soft" style="font-size:23px;margin-top:10px;">搜索 · 排序</div>
+    <div class="ink" style="font-size:29px;line-height:2.05;margin-top:38px;">
+      主要看 <span style="border-bottom:2px solid #1f1e1c;">关键词匹配</span><br>
+      你标题里到底有没有<br>
+      人家会搜的那几个字
+    </div>
+    <div style="margin-top:44px;position:relative;display:inline-block;">
+      <div class="serif red" style="font-size:36px;">胜负手：标题</div>
+      <span class="pen" style="left:0;bottom:-8px;width:230px;"></span>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:88px;right:88px;bottom:120px;">
+    <div class="rule" style="margin-bottom:26px;"></div>
+    <div class="red serif" style="font-size:32px;">大部分人只做对了一半，然后把锅甩给"号废了"。</div>
+  </div>
+
+  <div class="foot" style="bottom:44px;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;">
+      <div class="ink" style="font-size:24px;">@慢渡人间序</div>
+      <div class="soft" style="font-size:22px;">brand-social-ops-skills</div>
+    </div>
+  </div>
+</section>
+
+<!-- 插图 2：反漏斗 -->
+<section class="card" id="fig2">
+  <div class="grain"></div>
+  <div style="position:absolute;left:88px;top:80px;right:88px;">
+    <div class="serif ink" style="font-size:52px;letter-spacing:2px;">大牌投放，是<span class="red">反着来</span>的</div>
+    <div class="rule" style="margin-top:28px;"></div>
+  </div>
+
+  <div style="position:absolute;left:560px;top:220px;width:700px;">
+    <div class="tier hot serif" style="width:280px;">品牌人群</div>
+    <div class="tier serif" style="width:420px;">品类核心人群</div>
+    <div class="tier serif" style="width:560px;">类目潜在人群</div>
+    <div class="tier serif" style="width:700px;">泛人群</div>
+  </div>
+
+  <div style="position:absolute;left:190px;top:235px;">
+    <div class="red serif" style="font-size:30px;line-height:1.6;">从最窄的<br>这一层<br>开始打 →</div>
+  </div>
+
+  <div style="position:absolute;left:88px;right:88px;bottom:150px;">
+    <div class="rule" style="margin-bottom:30px;"></div>
+    <div class="ink" style="font-size:30px;line-height:1.9;">
+      先用很小的预算，砸最核心的那一小撮人。跑通了，再一层层往外扩。
+    </div>
+    <div class="red serif" style="font-size:32px;margin-top:22px;">
+      你连最该喜欢你的人都没打动，凭什么指望路人买账。
+    </div>
+  </div>
+
+  <div class="foot" style="bottom:44px;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;">
+      <div class="ink" style="font-size:24px;">@慢渡人间序</div>
+      <div class="soft" style="font-size:22px;">brand-social-ops-skills</div>
+    </div>
+  </div>
+</section>
+
+<!-- 插图 3：别只看点赞 -->
+<section class="card" id="fig3">
+  <div class="grain"></div>
+  <div style="position:absolute;left:88px;top:80px;right:88px;">
+    <div class="serif ink" style="font-size:52px;letter-spacing:2px;">别只看<span class="red">点赞</span></div>
+    <div class="rule" style="margin-top:28px;"></div>
+  </div>
+
+  <div style="position:absolute;left:88px;top:210px;right:88px;">
+    <div class="bar"><div class="lab soft serif">点赞</div><div class="fill" style="width:140px;"></div><div class="note">我喜欢 · 成本最低</div></div>
+    <div class="bar"><div class="lab ink serif">收藏</div><div class="fill hi" style="width:420px;"></div><div class="note" style="color:#b3453b;">我以后要用 —— 有用性最强信号</div></div>
+    <div class="bar"><div class="lab ink serif">评论</div><div class="fill hi" style="width:340px;"></div><div class="note">我有话说 · 参与</div></div>
+    <div class="bar"><div class="lab ink serif">分享</div><div class="fill hi" style="width:520px;"></div><div class="note">我愿意用它代表我</div></div>
+    <div class="bar"><div class="lab ink serif">关注</div><div class="fill hi" style="width:600px;"></div><div class="note">我认可这个账号，不只这一篇</div></div>
+  </div>
+
+  <div style="position:absolute;left:88px;right:88px;bottom:140px;">
+    <div class="rule" style="margin-bottom:28px;"></div>
+    <div class="red serif" style="font-size:32px;line-height:1.7;">
+      判断"干货"成不成立，看收藏。<br>
+      判断"共鸣"成不成立，看评论和分享。
+    </div>
+  </div>
+
+  <div class="foot" style="bottom:44px;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;">
+      <div class="ink" style="font-size:24px;">@慢渡人间序</div>
+      <div class="soft" style="font-size:22px;">brand-social-ops-skills</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+  function run(){
+    const h=location.hash.replace('#','');
+    if(h&&document.getElementById(h)){
+      document.body.classList.add('shot');
+      document.querySelectorAll('.card').forEach(p=>p.classList.remove('show'));
+      document.getElementById(h).classList.add('show');return;
+    }
+    document.querySelectorAll('.card').forEach(p=>{p.style.transform='scale(.55)';p.style.marginBottom='-400px';});
+  }
+  window.addEventListener('hashchange',()=>location.reload());run();
+</script>
+</body>
+</html>
